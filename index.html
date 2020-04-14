@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Joe Bramwell - Portfolio</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+           <nav class="flex-nav">
+                <ul>
+                    <li><a href="#" class="nav-link">About Me</a></li>
+                    <li><a href="#" class="nav-link">Graphic Design</a></li>
+                    <li><a href="#" class="nav-link">Motion Graphics</a></li>
+                    <li><a href="#" class="nav-link">Vector Illustration</a></li>
+                    <li><a href="#footer" class="nav-link">Contact</a></li>
+                </ul>
+           </nav>
+        <header>
+            <h1 class="header-heading">Joe Bramwell - Portfolio</h1>
+        </header>
+
+        <section class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/ella.jpg" style="width:100%;">
+              <div class="text">Ella, Sri Lanka</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/nz.jpg " style="width: 100%;">
+              <div class="text">Waiotapu, New Zealand</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/vietnam.jpg" style="width: 100%;">
+              <div class="text">Tam Cốc, Vietnam</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/dragonstone.jpg" style="width: 100%;">
+                <div class="text">Gaztelugatxe, Spain (A.K.A Drogonstone)</div>
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </section>
+            
+        <section class="about-me">
+            <h1>About me</h1>
+                <p>Hello and welcome to my portfolio! My name is Joe Bramwell, I am 25 years of age and live in Ramsbottom just outside of Manchester. I work at <a href="https://app.bolstersystems.com" class="p-link" target="_blank">Bolster Systems</a> -  a construction documentation system - where my main role is focused around user experience, technical support and brand development. When I am not working you can find me taking on graphic design and motion graphics freelance projects, or more recently, learning to code with <a href="https://www.manchestercodes.com/" class="p-link" target="_blank">Manchester Codes</a>! Continue reading to find out a little more about me including hobbies, likes & dislikes.</p>
+        </section>
+
+        <section class="hobbies">
+            <h1>Hobbies</h1>
+                <p>My main hobbies are focuessed around sport, music & food. I am an avid Burnley FC fan and have been a season ticket holder for 20 years, following home and away most weekends.<br>
+                    I love going to gigs and live music events. Most gigs I attend are Indie Rock/Pop, Lo-Fi or Hip-Hop. I worked for 5 years at the UK's largest festivals as a chef for various catering companies which has allowed me to build up quite a portfolio of acts watched live!<br>
+                    As mentined above, I love all things food! Trying a new restaurant, drinking a new Gin or IPA or cooking a new recipe at home. You would most often find me socialising with good friends at local bars or restaurants at the weekend!<br>
+                    I enjoy exercising (as much as anyone can possibly enjoy it!). I am the player/manager of a Sunday league team in Ramsbottom and enjoy going to the gym, out on runs or long country walks with the dogs!<br>
+                    I love to travel and have speant time in New Zealand, South east Asia, Sri Lanka and mainland Europe. My favouritte place I Have been is a toss up between Hoi An, Queenstown or San Sebastian!</p>
+        </section>
+
+        <section class="likes">
+            <h1>Likes</h1>
+                <ul>
+                    <li>Burnley FC</li>
+                    <li>Finding new bands and artists</li>
+                    <li>Eating/drinking out</li>
+                    <li>Long country walks</li>
+                    <li>Graphic design</li>
+                    <li>Purchasing an unhealthy amounts of clothing & shoes</li>
+                    <li>Vinyl (the plural of vinyl)</li>
+                    <li>Meeting likeminded people</li>
+                    <li>The Simpsons, It's Always Sunny in Philadelphia, Entourage, Peep Show & Sopranos</li>
+                    <li>House plants</li>
+                    <li>Taking photos of pictureque cranes</li>
+                </ul>
+
+                
+        <section class="dislikes">    
+            <h1>Dislikes</h1>
+                <ul>       
+                    <li>David Dunn</li>
+                    <li>Beetroot</li>
+                    <li>Whiskey</li>
+                    <li>Not being thanked for giving way whilst driving</li>
+                    <li>Reality TV</li>
+                    <li>The 1975</li>
+                </ul>
+        </section>
+
+        <section class="dinner-party">
+            <h1>Top 5 dinner party guests</h1>
+                    <ul>
+                        <li>Sean Dyche</li>
+                        <li>Josh Tillman</li>
+                        <li>Charlie Kelly</li>
+                        <li>Ben Mee</li>
+                        <li>Francis Mallmann (to cook!)</li>
+                    </ul>
+               
+        </section>
+
+        <section class="quotes">
+            <h2>Favourite Quotes</h2>
+                <p><i>"Stupidity got us into this mess, and stupidity will get us out"</i> - Homer J. Simpson</p>
+        </section>
+        <footer id="footer">
+            <div class="social-icons-container">
+                <a href="https://twitter.com/jbram_js" target="_blank"><img src="images/twitter.svg" class="social-icon" alt="Twitter Icon"/></a>
+                <a href="https://redbubble.com/people/printsbybram/shop" target="_blank"><img src="images/redbubble.svg" class="social-icon" alt="Redbubble Icon"/></a>
+                <a href="https://github.com/jbram-js" target="_blank"><img src="images/github.svg" class="social-icon" alt="GitHub Icon"/></a>
+                <a href="https://instagram.com/instabram1882/" target="_blank"><img src="images/instagram.svg" class="social-icon" alt="Instagram Icon"/></a>
+              </div>
+        </footer>
+    
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <button onclick="topFunction()" id="top-button" title="Go to top">To the top!</button>
+            <script>
+      
+              window.onscroll = function() {scrollFunction()};
+      
+              function scrollFunction() {
+                if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+              }
+      
+              function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }
+            </script>
+            
+        </body>
+    </html>
