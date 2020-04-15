@@ -8,9 +8,9 @@ html {
   
   
   body {
-    font-family: Menlo, monospace;
+    font-family: 'Ubuntu Mono', monospace;
     background:#ffffff;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0px;
   }
 
@@ -23,8 +23,8 @@ ul {
     background: rgba(0,0,0,0.05);
     text-align: center;
     padding:20px;
-    margin: 10px;
-
+    margin: 10px 10px 10px 10px;
+ 
   }
 
 
@@ -45,12 +45,13 @@ h1.header-heading {
   p {
       color: #000000;
       line-height: 24px;
-      padding: 0 20px 0 20px;
+      padding: 0 10px 0 20px;
   }
 
   .text {
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 2px;
+    font-size: 20px;
   }
 
   img {
@@ -166,6 +167,7 @@ footer {
 
 display: flex;
 flex-wrap: wrap;
+
 
   }
 
