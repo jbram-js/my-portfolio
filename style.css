@@ -10,29 +10,47 @@ html {
   body {
     font-family: Menlo, monospace;
     background:#ffffff;
-    font-size: 20px;
-    margin: 0px;
-    padding: 0 20px 0 20px;;
+    font-size: 14px;
+    padding: 0px;
   }
 
 ul {
       list-style: none;
+
   }
+
+  .lists {
+    background: rgba(0,0,0,0.05);
+    text-align: center;
+    padding:20px;
+    margin: 10px;
+
+  }
+
 
   h1 {
     font-family: 'Lobster', cursive;
     color: #FD5800;
-    font-size: 30px;;
+    font-size: 32px;
+    text-align: center;
+
   }
 
 h1.header-heading {
     text-align: center;
-    font-size: 40px;
+    font-size: 48px;
 }
 
 
   p {
       color: #000000;
+      line-height: 24px;
+      padding: 0 20px 0 20px;
+  }
+
+  .text {
+    padding-top: 10px;
+    padding-left: 20px;
   }
 
   img {
@@ -42,7 +60,7 @@ h1.header-heading {
   a.nav-link {
     color: #FD5800;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
     text-decoration: none;
     padding:20px 5px;
@@ -105,8 +123,6 @@ li:hover ~ li.wave {
   animation: wave-animation 0.3s infinite;
 }
 
-/* below is just for demo styling */
-
 footer {
   display: flex;
   width: 100%;
@@ -146,33 +162,38 @@ footer {
     flex:1;
   }
   
+  .all-lists {
+
+display: flex;
+flex-wrap: wrap;
+
+  }
+
+
+  .lists {
+
+    flex: 1 1 calc(33.33% - 20px);
+
+  }
+
   @media all and (max-width:1000px) {
 
     body {
-      font-size: 14px;
-      padding: 0 10px 0 10px;;
+      font-size: 10px;
     }
 
     h1.header-heading {
-      font-size: 28px;
+      font-size: 36px;
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 26px;
       
     }
 
     a.nav-link {
       font-size: 14px;
     }
-
-    .prev, .next {
-      font-size: 24px;
-      font-weight: normal;
-    }
-
-    
-
   
     .flex-nav ul {
       flex-wrap:wrap;
@@ -183,7 +204,10 @@ footer {
     }
   }
 
-    @media all and (max-width:500px) {
+
+  @media (max-width: 500px) {
+    
+  
   
         .flex-nav li {
           flex-basis:100%;
@@ -201,7 +225,7 @@ footer {
     top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -60px;
+    margin-top: -35px;
     color: #FD5800; 
     font-weight: bold;
     font-size: 30px;
