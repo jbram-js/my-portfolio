@@ -28,7 +28,8 @@ ul {
     text-align: center;
     padding:20px;
     margin: 10px 10px 10px 10px;
- 
+    font-size: 16px;
+
   }
 
 
@@ -37,6 +38,7 @@ ul {
     color: #FD5800;
     font-size: 32px;
     text-align: center;
+    
 
   }
 
@@ -215,6 +217,7 @@ footer {
 
     .lists {
       line-height: 20px;
+      font-size: 12px;
     }
 
     .wave {
