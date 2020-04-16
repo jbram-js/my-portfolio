@@ -186,6 +186,7 @@ footer {
     text-align: center;
     flex: 1 1 calc(33.33% - 20px);
     align-items: center;
+    line-height: 24px;
   
   
 
@@ -210,6 +211,10 @@ footer {
 
       font-size: 14px;
 
+    }
+
+    .lists {
+      line-height: 20px;
     }
 
     .wave {
