@@ -6,6 +6,10 @@ html {
     box-sizing: inherit;
   }
   
+  @font-face {
+    font-family: lobster;
+    src: url(Lobster-Regular.ttf);
+  }
   
   body {
     font-family: 'Ubuntu Mono', monospace;
@@ -29,7 +33,7 @@ ul {
 
 
   h1 {
-    font-family: 'Lobster', cursive;
+    font-family: lobster;
     color: #FD5800;
     font-size: 32px;
     text-align: center;
