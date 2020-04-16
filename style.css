@@ -51,7 +51,7 @@ h1.header-heading {
   .text {
     padding-top: 10px;
     padding-left: 2px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   img {
@@ -93,12 +93,16 @@ h1.header-heading {
 ul.footer {
   display: inline-grid;
   grid-auto-flow: row;
-  grid-gap: 24px;
+  grid-gap: 30px;
   justify-items: center;
   margin: auto;
   padding: 20px 20px;
+  align-items: center;
 }
 
+.wave {
+  font-size: 30px;
+}
 @media (min-width: 500px) {
   ul.footer {
     grid-auto-flow: column;
@@ -158,30 +162,35 @@ footer {
     padding:50px;
   }
   
-  /* Flex Item */
   .flex-nav li {
     flex:1;
   }
   
   .all-lists {
 
-display: flex;
-flex-wrap: wrap;
+    flex:1;
+    display:flex;
+    padding:20px 5px;
+    flex-wrap: wrap;
+    align-items: stretch;
 
 
   }
 
-
   .lists {
-
+    display: block;
+    text-align: center;
     flex: 1 1 calc(33.33% - 20px);
+    align-items: center;
+  
+  
 
   }
 
   @media all and (max-width:1000px) {
 
     body {
-      font-size: 10px;
+      font-size: 12px;
     }
 
     h1.header-heading {
@@ -191,6 +200,16 @@ flex-wrap: wrap;
     h1 {
       font-size: 26px;
       
+    }
+
+    .text {
+
+      font-size: 14px;
+
+    }
+
+    .wave {
+      font-size: 20px;
     }
 
     a.nav-link {
