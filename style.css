@@ -14,7 +14,7 @@ html {
   body {
     font-family: 'Ubuntu Mono', monospace;
     background:#ffffff;
-    font-size: 18px;
+    font-size: 22px;
     padding: 0px;
   }
 
@@ -28,7 +28,7 @@ ul {
     text-align: center;
     padding:20px;
     margin: 10px 10px 10px 10px;
-    font-size: 16px;
+    font-size: 22px;
 
   }
 
@@ -36,7 +36,7 @@ ul {
   h1 {
     font-family: lobster;
     color: #FD5800;
-    font-size: 36px;
+    font-size: 38px;
     text-align: center;
     
 
@@ -44,20 +44,20 @@ ul {
 
 h1.header-heading {
     text-align: center;
-    font-size: 52px;
+    font-size: 54px;
 }
 
 
   p {
       color: #000000;
-      line-height: 24px;
+      line-height: 30px;
       padding: 0 10px 0 20px;
   }
 
   .text {
     padding-top: 10px;
     padding-left: 2px;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   img {
@@ -107,7 +107,7 @@ ul.footer {
 }
 
 .wave {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 
@@ -197,35 +197,39 @@ footer {
   @media all and (max-width:1000px) {
 
     body {
-      font-size: 14px;
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 28px;
     }
 
     h1.header-heading {
-      font-size: 40px;
+      font-size: 44px;
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 34px;
       
     }
 
     .text {
 
-      font-size: 16px;
+      font-size: 20px;
 
     }
 
     .lists {
-      line-height: 20px;
-      font-size: 14px;
-    }
-
-    .wave {
+      line-height: 28px;
       font-size: 20px;
     }
 
+    .wave {
+      font-size: 24px;
+    }
+
     a.nav-link {
-      font-size: 16px;
+      font-size: 20px;
     }
   
     .flex-nav ul {
@@ -244,6 +248,38 @@ footer {
   
         .flex-nav li {
           flex-basis:100%;
+        }
+
+        body {
+          font-size: 16px;
+        }
+
+        p {
+          line-height: 24px;
+        }
+    
+        h1.header-heading {
+          font-size: 40px;
+        }
+    
+        h1 {
+          font-size: 30px;
+          
+        }
+    
+        .text {
+    
+          font-size: 18px;
+    
+        }
+    
+        .lists {
+          line-height: 24px;
+          font-size: 16px;
+        }
+    
+        .wave {
+          font-size: 20px;
         }
     }
     
