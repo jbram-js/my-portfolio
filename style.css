@@ -31,7 +31,19 @@ ul {
     font-size: 22px;
 
   }
+  .lists1 {
+  
+    text-align: center;
+    padding:20px;
+    margin: 10px 10px 10px 10px;
+    font-size: 22px;
 
+  }
+
+  iframe {
+    width: 300px;
+    height: 380px;
+  }
 
   h1 {
     font-family: lobster;
@@ -189,6 +201,15 @@ footer {
   
   }
 
+  .lists1 {
+    display: block;
+    text-align: center;
+    flex: 1 1 calc(33.33% - 20px);
+    align-items: center;
+    line-height: 24px;
+  
+  }
+
 @media (min-width: 500px) {
   ul.footer {
     grid-auto-flow: column;
@@ -221,6 +242,11 @@ footer {
     }
 
     .lists {
+      line-height: 28px;
+      font-size: 20px;
+    }
+
+    .lists1 {
       line-height: 28px;
       font-size: 20px;
     }
@@ -277,6 +303,16 @@ footer {
         .lists {
           line-height: 24px;
           font-size: 16px;
+        }
+
+        .lists1 {
+          line-height: 24px;
+          font-size: 16px;
+        }
+
+        iframe {
+          width: 300px;
+          height: 80px;
         }
     
         .wave {
