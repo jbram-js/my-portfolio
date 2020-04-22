@@ -7,6 +7,7 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
             <meta name="viewport" content="width=device-width,initial-scale=1">
+            
         </head>
 
         <body>
@@ -25,13 +26,20 @@
             <p>Thanks for visiting my portfolio. I hope you now know me a little better and have had a look through some of my past work. It would be great if you could give me a little feedback, tips, tricks or simply tell me something you liked if you're feeling kind! fill in the form below:</p>
             <br>
             
-            <script>
-                let d = new Date();
-                alert("Today's date is " + d);
-            </script>
 
+            <form method="post">
+                <input type="text" name="name" id="name" />
+                <input type="submit" name="send" id="send" value="Submit" />
+                </form>
 
-
+                <script type="text/javascript">
+                    window.onload = function(){
+                       document.getElementById('send').onclick = function(e){
+                           alert(document.getElementById("name").value);
+                           return false;
+                       }
+                    }
+                    </script>
             <footer>
                 <ul class="footer">
                   <li><a href="https://twitter.com/jbram_js" target="blank" class="footer-link">Twitter</a></li>
