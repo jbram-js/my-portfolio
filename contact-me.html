@@ -3,7 +3,7 @@
         <head>
             <meta charset="UTF-8">
             <title>Joe Bramwell - Contact Me</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="contact-me-style.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
             <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,27 +13,35 @@
         <body>
             <nav class="flex-nav">
                  <ul>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
                      <li><a href="index.html" class="nav-link">About Me</a></li>
-                     <li><a href="graphicdesign.html" class="nav-link">Graphic Design</a></li>
-                     <li><a href="motiongraphics.html" class="nav-link">Motion Graphics</a></li>
-                     <li><a href="vectorillustration.html" class="nav-link">Vector Illustration</a></li>
                      <li><a href="contact-me.html" class="nav-link">Contact Me</a></li>
                  </ul>
             </nav>
 
             <h1>Contact Me</h1>
             <br>
-            <p>Thanks for visiting my portfolio. I hope you now know me a little better and have had a look through some of my past work. It would be great if you could give me a little feedback, tips, tricks or simply tell me something you liked if you're feeling kind! fill in the form below:</p>
+            <p>Thanks for visiting my portfolio, I hope you now know me a little better! Feel free to drop me a message using the contact form below:</p>
             <br>
             
             <section class="contact-me">
-                <form id="contact-me" value="value">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Full name">
-                    <label for="name">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="Email address">
-                    <label for="msg">Message:</label>
-                    <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+                <form class="form" value="value">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="name" placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input id="email" type="text" name="email" placeholder="Your email">
+                        </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input id="subject" type="text" name="subject" placeholder="Message subject">
+                    </div>
+                    <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Type your message here" cols="30" rows="10"></textarea>
+                    </div>
                     <button id="submit" type="submit">Submit</button>
                     <button id="reset" type="reset">Clear</button>
                 </form>
@@ -43,8 +51,12 @@
                 document.getElementById("submit").onclick = function() {
                     var name = document.getElementById('name').value;
                     var email = document.getElementById('email').value;
+                    var subject = document.getElementById('subject').value;
                     var message = document.getElementById('message').value;
-                    alert(name + "\n" + email + "\n" + message);
+                    alert(`Name: ${name} 
+Email: ${email}
+Subject: ${subject}
+Message: ${message}`);
                 }
         </script>
             
