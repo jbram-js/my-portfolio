@@ -26,20 +26,28 @@
             <p>Thanks for visiting my portfolio. I hope you now know me a little better and have had a look through some of my past work. It would be great if you could give me a little feedback, tips, tricks or simply tell me something you liked if you're feeling kind! fill in the form below:</p>
             <br>
             
-
-            <form method="post">
-                <input type="text" name="name" id="name" />
-                <input type="submit" name="send" id="send" value="Submit" />
+            <section class="contact-me">
+                <form id="contact-me" value="value">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Full name">
+                    <label for="name">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Email address">
+                    <label for="msg">Message:</label>
+                    <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+                    <button id="submit" type="submit">Submit</button>
+                    <button id="reset" type="reset">Clear</button>
                 </form>
+            </section>
 
-                <script type="text/javascript">
-                    window.onload = function(){
-                       document.getElementById('send').onclick = function(e){
-                           alert(document.getElementById("name").value);
-                           return false;
-                       }
-                    }
-                    </script>
+            <script>
+                document.getElementById("submit").onclick = function() {
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var message = document.getElementById('message').value;
+                    alert(name + "\n" + email + "\n" + message);
+                }
+        </script>
+            
             <footer>
                 <ul class="footer">
                   <li><a href="https://twitter.com/jbram_js" target="blank" class="footer-link">Twitter</a></li>
