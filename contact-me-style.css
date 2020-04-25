@@ -48,6 +48,9 @@ p {
     padding: 0 10px 0 20px;
 }
 
+textarea {
+  resize: none;
+}
 
 .wrapper {
   max-width: 1000px;
